@@ -1,0 +1,9 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+
+@/bin/sleep 20
+@/usr/bin/chromium-browser --disk-cache-size=2048 --noerrdialogs --kiosk --disable-pinch --overscroll-history-navigation=0 -app=http://127.0.0.1:8888
+
+@xset -display :0 s off
+@xset -display :0 -dpms
+@xset -display :0 s noblank
